@@ -12,6 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Public+Sans:wght@300;400&family=Source+Sans+Pro:wght@600;700&display=swap"
         rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body
@@ -316,21 +320,23 @@
                 </div>
             </div>
             <div class="h-full md:flex justify-center items-center gap-8">
-                <form action="https://formsubmit.co/rgregis.contact@gmail.com" method="POST" class="flex flex-col gap-2 mb-4 md:w-5/12">
+                <form target="_blank" action="https://formsubmit.co/rgregis.contact@gmail.com" method="POST"
+                    class="flex flex-col gap-2 mb-4 md:w-5/12">
                     <label for="inputName" class="font-source-sans font-semibold text-xl">Name:</label>
-                    <input type="text" id="inputName" name="Name"
+                    <input type="text" id="inputName" name="name"
                         class="font-public-sans font-normal text-orange text-sm rounded-3xl bg-gray-200 h-8 mb-4 p-2 focus:bg-white focus:outline-none focus:shadow-orange focus:text-black"
                         required>
 
                     <label for="inputEmail" class="font-source-sans font-semibold text-xl">Email Address:</label>
-                    <input type="email" id="inputEmail" name="Email"
+                    <input type="email" id="inputEmail" name="email"
                         class="font-public-sans font-normal text-orange text-sm rounded-3xl bg-gray-200 h-8 mb-4 p-2 focus:bg-white focus:outline-none focus:shadow-orange focus:text-black"
                         required>
 
                     <label for="inputMsg" class="font-source-sans font-semibold text-xl">Message:</label>
-                    <textarea id="inputMsg" name="Message"
+                    <textarea id="inputMsg" name="message"
                         class="font-public-sans font-normal text-orange text-sm rounded-3xl bg-gray-200 h-20 mb-2 p-2 focus:bg-white focus:outline-none focus:shadow-orange focus:text-black"
                         required></textarea>
+                    <input type="hidden" name="_subject" value="Contact from Portfolio">
                     <div class="flex justify-center items-center">
                         <button type="submit"
                             class="bg-orange text-center w-40 h-10 rounded-3xl font-source-sans font-semibold text-xl">
@@ -347,7 +353,7 @@
                     class="snap snap-x snap-mandatory shadow-blue scrollbar-thin scrollbar-thumb-blue-dark scrollbar-track-transparent overflow-x-scroll w-64 rounded-xl md:w-5/12 md:h-96 py-2 md:py-10 mt-4 md:mt-0 flex flex-row justify-evenly items-center md:gap-8 md:bg-white">
                     <div class="hidden md:flex w-1/2 h-full flex-col p-6 justify-center">
                         <img src="./assets/images/contact-img.JPG" alt="">
-                        
+
                     </div>
                     <div class="w-full flex-row md:w-1/2 md:h-full flex md:flex-col justify-between items-center">
                         <h3 class="hidden px-4 md:inline font-source-sans text-2xl text-center text-black">
@@ -376,10 +382,12 @@
                             </p>
                             <div class="snap-center w-64 flex flex-shrink-0 justify-around gap-4">
                                 <a href="https://ryanregis.github.com/" target="_blank">
-                                    <img src="./assets/logos/github.png" alt="GitHub Logo" class="w-8 h-8 md:bg-black rounded-full border border-black">
+                                    <img src="./assets/logos/github.png" alt="GitHub Logo"
+                                        class="w-8 h-8 md:bg-black rounded-full border border-black">
                                 </a>
                                 <a href="#">
-                                    <img src="./assets/logos/linkedin.png" alt="LinkedIn Logo" class="w-8 h-8 md:bg-black md:rounded-xl md:border md:border-black">
+                                    <img src="./assets/logos/linkedin.png" alt="LinkedIn Logo"
+                                        class="w-8 h-8 md:bg-black md:rounded-xl md:border md:border-black">
                                 </a>
                             </div>
                         </div>
