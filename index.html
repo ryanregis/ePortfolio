@@ -328,7 +328,7 @@
                 </div>
             </div>
             <div class="h-full md:flex justify-center items-center gap-8">
-                <form target="_blank" action="https://formsubmit.co/rgregis.contact@gmail.com" method="POST"
+                <form name="contactForm" target="_blank" action="https://formsubmit.co/rgregis.contact@gmail.com" method="POST"
                     class="flex flex-col gap-2 mb-4 md:w-5/12">
                     <label for="inputName" class="font-source-sans font-semibold text-xl">Name:</label>
                     <input type="text" id="inputName" name="name"
@@ -347,7 +347,8 @@
                     <input type="hidden" name="_subject" value="Contact from Portfolio">
                     <div class="flex justify-center items-center">
                         <button type="submit"
-                            class="bg-orange text-center w-40 h-10 rounded-3xl font-source-sans font-semibold text-xl">
+                            class="bg-orange text-center w-40 h-10 rounded-3xl font-source-sans font-semibold text-xl"
+                            onclick="submitForm()">
                             Send Message
                         </button>
                     </div>
@@ -410,6 +411,12 @@
     </div>
 
     <script src="./main.js"></script>
+    <script>
+        function submitForm(){
+            document.contactForm.submit();
+            document.contactForm.reset();
+        }
+    </script>
 </body>
 
 </html>
